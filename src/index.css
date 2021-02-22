@@ -50,3 +50,7 @@ body {
 .alignCenter {
     text-align: center;
 }
+
+.paddingTop {
+    padding-top: 20px;
+}

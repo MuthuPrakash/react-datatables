@@ -33,7 +33,7 @@ class Input extends Component {
     render() {
         return (
             <div className="app-input">
-                <div>
+                <div className="paddingTop">
                     <h1>
                         Master Electricals<Badge variant="secondary"></Badge>
                     </h1>
@@ -43,7 +43,7 @@ class Input extends Component {
                         <Row>
                             <Form className="alignCenter">
                                 <Form.Group controlId="formAdminPin" className={!this.state.loginValidate ? 'displayBlock' : 'displayNone'}>
-                                    <Form.Label>Admin PIN</Form.Label>
+                                    <h4>Admin PIN</h4>
                                     <Form.Control type="text" placeholder="Enter Admin PIN" onChange={(e) => {
                                         console.log('Admin PIN value change: ', e.target.value)
 
