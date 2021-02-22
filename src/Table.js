@@ -27,15 +27,22 @@ const columns = [
 ];
 
 class Table extends Component {
-      render() {
-          console.log(JSON.stringify(this.props.names));
+    render() {
+        console.log(JSON.stringify(this.props.names));
         return (
             <div>
-               <DataTable
-        title="Book Items"
-        columns={columns}
-        data={this.props.names}
-      />
+                <DataTable
+                    title="Book Items"
+                    columns={columns}
+                    data={this.props.names}
+                    striped={true}
+                    highlightOnHover={true}
+                    responsive={true}
+                    defaultSortField={"Book Id"}
+                    defaultSortAsc={true}
+                    pagination={true}
+                    paginationPerPage={50}
+                />
             </div>);
     }
 }
